@@ -1,0 +1,98 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make default font size 10px (easier to use rem this way) */
+html {
+  font-size: 10px;
+}
+
+/* Add a background image */
+body {
+  height: 100%;
+  background-image: url("https://images2.alphacoders.com/564/thumb-1920-564835.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Responsive gallery using GRID and include*/
+.gallery {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  column-gap: 3.5rem;
+
+  max-width: 145rem;
+
+  margin: auto;
+}
+
+/* Card styling to make it a flexbox */
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 35rem;
+  height: 70rem;
+
+  margin: 5rem 0;
+
+  border-radius: 15px;
+
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(236, 240, 25, 0.972);
+}
+
+/* Image styling to mantian the aspect ratio*/
+img {
+  object-fit: cover;
+  height: 28.5rem;
+  width: 100%;
+
+  border-radius: 15px 15px 0 0;
+
+  margin-bottom: 3rem;
+}
+
+/* figcaption as a flexbox*/
+figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  gap: 2rem;
+}
+
+/* h1 styling */
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: rgb(126, 189, 126);
+}
+
+/* p styling */
+p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* a styling */
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* a styling HOVER */
+a:hover {
+  color: rgb(126, 189, 126);
+}
